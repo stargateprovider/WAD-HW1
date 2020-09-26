@@ -1,0 +1,118 @@
+:root {
+	--color1: #1677BD;
+	--color2: #0D579B;
+}
+
+body {
+	background-color: var(--color1);
+	margin: 0;
+}
+
+header {
+	margin: 0;
+	display: flex;
+	align-content: center; /*horisontal*/
+	align-items: center; /*vertical*/
+	justify-content: space-around;
+	background-color: white;
+}
+
+.homelink > img {
+	width: 32px;
+	height: 32px;
+	margin-left: 5px;
+}
+
+#search {
+	display: inline-flex;
+	margin: 5px;
+}
+
+#search > input[type=search] {
+	width: 400px;
+	border: 1px solid lightgrey;
+	border-radius: 0;
+}
+#search > input[type=search]:hover {
+	border-color: grey;
+}
+
+
+#search > input[type=submit] {
+	background-color: var(--color2);
+	border: 3px solid var(--color2);
+	border-radius: 0 5px 5px 0;
+	color: white;
+	font-weight: bold;
+	padding: 4px 25px 4px 25px;
+}
+
+button.accountLink {
+	border: none;
+	background: none;
+	padding: 0;
+}
+.accountLink > img {
+	width: 32px;
+}
+
+main {
+	background-color: white;
+	width: 60%;
+	margin: auto;
+	margin-top: 0;
+	align-content: center;
+}
+
+.postList {
+	list-style-type: none;
+	margin: auto;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-top: 50px;
+	width: 75%;
+}
+
+.postList > li {
+	box-shadow: 0 0 10px 0px lightgrey;
+	margin-bottom: 15px;
+}
+
+
+
+.postHeader {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.postHeader + div img {
+	width: 100%;
+}
+
+.postHeader > 
+
+.postHeader > .accountLink {}
+
+.postHeader, .postFooter {
+}
+
+.likeBtn {
+	background-color: var(--color2);
+	background-image: url("https://www.iconsdb.com/icons/preview/white/thumbs-up-xxl.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 20px;
+
+	border: 1px solid var(--color2);
+	border-radius: 3px;
+	margin: 5px;
+	width: 45px;
+	height: 30px;
+}
+
+/*
+0D579B
+556080
+E7ECED
+/*
