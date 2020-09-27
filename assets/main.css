@@ -117,3 +117,69 @@ main {
 	width: 45px;
 	height: 30px;
 }
+
+
+.welcome h3, h4, .password, .email, .login, .forgotpw{
+display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.welcome > img{
+    width: 120px;
+    top:100px;
+}
+
+
+
+ul{
+background-color: var(--color3);
+	margin: auto;
+	width: 30%;
+	}
+
+#login{
+    display:flex;
+    flex-wrap:wrap;
+    width: 30%;
+    padding: 12px 20px;
+   margin: 8px 0;
+   box-sizing: border-box;
+  }
+
+#loginbutton{
+ background-color:var(--color1);
+  border: none;
+  color: white;
+  padding: 12px 28px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+#login > input[type=email] {
+	width: 200px;
+	border: 1px solid lightgrey;
+	border-radius: 0;
+	padding: 12px 20px;
+      margin: 8px 0;
+      box-sizing: border-box;
+	}
+
+	#login > input[type=password] {
+    	width: 200px;
+    	border: 1px solid lightgrey;
+    	border-radius: 0;
+    	padding: 12px 20px;
+          margin: 8px 0;
+          box-sizing: border-box;
+    	}
+
+    #login > input[type=email]:hover {
+    	border-color: grey;
+    	}
+
+    #login > input[type=password]:hover {
+    	border-color: grey;
+    	}
+
+
