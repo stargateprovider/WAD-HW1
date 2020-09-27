@@ -1,35 +1,41 @@
 :root {
 	--color1: #1677BD;
 	--color2: #0D579B;
+	--color3: white;
 }
 
 body {
 	background-color: var(--color1);
+	font-family: Verdana, sans-serif;
 	margin: 0;
 }
 
 header {
-	margin: 0;
 	display: flex;
 	align-content: center; /*horisontal*/
 	align-items: center; /*vertical*/
-	justify-content: space-around;
-	background-color: white;
+	justify-content: space-between;
+	background-color: var(--color3);
+	padding: 5px 10px 5px 25px;
 }
 
-.homelink > img {
+.homelink {
+	background-image: url("https://findicons.com/files/icons/2796/metro_uinvert_dock/256/sticky_notes.png");
+	background-position: right;
+	background-repeat: no-repeat;
+	background-size: 32px;
 	width: 32px;
 	height: 32px;
-	margin-left: 5px;
 }
 
 #search {
 	display: inline-flex;
+	height: 30px;
 	margin: 5px;
 }
 
 #search > input[type=search] {
-	width: 400px;
+	width: 420px;
 	border: 1px solid lightgrey;
 	border-radius: 0;
 }
@@ -37,14 +43,13 @@ header {
 	border-color: grey;
 }
 
-
 #search > input[type=submit] {
+	width: 105px;
 	background-color: var(--color2);
 	border: 3px solid var(--color2);
 	border-radius: 0 5px 5px 0;
 	color: white;
 	font-weight: bold;
-	padding: 4px 25px 4px 25px;
 }
 
 button.accountLink {
@@ -57,28 +62,27 @@ button.accountLink {
 }
 
 main {
-	background-color: white;
-	width: 60%;
+	background-color: var(--color3);
 	margin: auto;
-	margin-top: 0;
-	align-content: center;
+	width: 55%;
 }
 
 .postList {
-	list-style-type: none;
 	margin: auto;
-	margin-top: 0;
-	margin-bottom: 0;
-	padding-top: 50px;
+	padding: 55px 0 15px 0;
 	width: 75%;
 }
 
-.postList > li {
-	box-shadow: 0 0 10px 0px lightgrey;
+.postList > article {
+	border-radius: 5px;
+	box-shadow: 0 0 15px 4px lightgrey;
 	margin-bottom: 15px;
 }
 
-
+.postList p, .postHeader, .postFooter {
+	margin: 0;
+	padding: 10px;
+}
 
 .postHeader {
 	display: flex;
@@ -86,17 +90,20 @@ main {
 	justify-content: space-between;
 }
 
+.postHeader span {
+	color: #878787;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	align-self: baseline;
+}
+
+.postHeader ~ div:not(.postFooter) {
+	font-size: 18px;
+}
 .postHeader + div img {
 	width: 100%;
 }
-
-.postHeader > 
-
-.postHeader > .accountLink {}
-
-.postHeader, .postFooter {
-}
-
 .likeBtn {
 	background-color: var(--color2);
 	background-image: url("https://www.iconsdb.com/icons/preview/white/thumbs-up-xxl.png");
@@ -110,9 +117,3 @@ main {
 	width: 45px;
 	height: 30px;
 }
-
-/*
-0D579B
-556080
-E7ECED
-/*
